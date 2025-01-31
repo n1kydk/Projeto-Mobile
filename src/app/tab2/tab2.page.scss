@@ -1,0 +1,112 @@
+.page-container {
+    background-color: rgb(192, 27, 69);
+}
+
+.corp {
+    border: 0;
+}
+
+img {
+    width: 180px;
+}
+
+.fundo {
+    --ion-background-color: #141414;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.pres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+}
+
+.botao {
+    background: #d71e4c;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 600px;
+    height: 50px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.btn3 {
+    width: 120px;
+    height: 50px;
+    margin: 120px;
+    background: #d71e4c;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.ctn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    margin-top: 20px;
+}
+
+.bn {
+    background: #d71e4c;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    width: 180px;
+    height: 50px;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.btn2 {
+    width: 100px;
+    height: 50px;
+    background: #d71e4c;
+    color: white;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.branco {
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .pres {
+        font-size: 30px;
+    }
+
+    .botao {
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pres {
+        font-size: 25px;
+    }
+
+    .botao {
+        max-width: 150px;
+    }
+}
+
+ion-button.botao {
+    display: none;
+}

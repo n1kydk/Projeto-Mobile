@@ -1,0 +1,140 @@
+.page-container {
+    background-color: rgb(192, 27, 69);
+}
+
+.corp {
+    border: 0dvh;
+}
+
+.pres {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px;
+}
+
+.fundo {
+    --ion-background-color: #141414; 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.centro {
+    background-color: #141414;
+    border: 1px solid white; 
+    border-radius: 20px; 
+    width: 90%;
+    max-width: 700px;
+    color: white;
+    padding: 15px;
+    margin: 10px 0;
+}
+
+.confi {
+    --highlight-color-focused: #d71e4c; 
+    --color-focused: #d71e4c; 
+}
+
+img {
+    width: 180px;
+}
+
+.btones {
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.btn2 {
+    position: relative;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.botao {
+    background: #d71e4c; 
+    color: white; 
+    font-weight: bold;
+    border-radius: 20px; 
+    width: 180px; 
+    height: 50px; 
+    text-align: center; 
+    margin: 4px 2px;
+}
+
+.botao:hover {
+    background-color: #b1193f; 
+}
+
+.botao:active {
+    background-color: #a11538; 
+}
+
+
+ion-searchbar.custom {
+    --background: white;
+    --color: black;
+    --placeholder-color: black;
+    --icon-color: black;
+    --clear-button-color: black;
+    --border-radius: 20px; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 10px 0;
+}
+
+ion-searchbar.ios.custom {
+    --cancel-button-color: #5c1737;
+}
+
+
+ion-searchbar.md.custom {
+    --cancel-button-color: black;
+}
+
+.lista {
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin: 10px auto;
+}
+
+.ctn {
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .centro {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .pres {
+        font-size: 30px;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .pres {
+        font-size: 25px;
+    }
+
+    .botao {
+        width: 100%;
+        max-width: 150px;
+    }
+}

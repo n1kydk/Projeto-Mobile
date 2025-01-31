@@ -1,0 +1,23 @@
+<ion-content [fullscreen]="true" class="tab3-content">
+  <ion-button (click)="navigateToMembers()" class="custom-button">
+    Membros
+    <ion-icon aria-hidden="true" name="people-outline"></ion-icon>
+  </ion-button>
+
+
+  <ion-button id="present-alert3" class="custom-button">Configurações e Privacidade<ion-icon aria-hidden="true" name="settings-outline"></ion-icon></ion-button>
+  <ion-alert
+    trigger="present-alert3"
+    header="Em breve"
+    sub-header="Opção indisponivel."
+    message="A vida é uma constante oscilação entre a ânsia de ter e o tédio de possuir"
+  ></ion-alert>
+
+  <ion-button id="present-alert4" class="custom-button">Novidades<ion-icon aria-hidden="true" name="paper-plane-outline"></ion-icon></ion-button>
+  <ion-alert
+    trigger="present-alert4"
+    header="Em breve"
+    sub-header="Opção indisponivel."
+    message="A vida é uma constante oscilação entre a ânsia de ter e o tédio de possuir"
+  ></ion-alert>
+</ion-content>

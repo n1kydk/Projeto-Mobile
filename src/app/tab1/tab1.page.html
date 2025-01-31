@@ -1,0 +1,50 @@
+<ion-content class="fundo">
+  <div class="page-container">
+    <ion-header class="corp">
+      <div>
+        <ion-grid>
+          <br>
+          <ion-row>
+            <ion-col>
+              <img src="../../assets//icon/flaplay.png" class="logo">
+            </ion-col>
+            <ion-col class="p">
+              <table class="pres">
+                <tr>
+                  <td class="a">Busque suas Músicas Favoritas</td>
+                </tr>
+              </table>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-header>
+  </div>
+
+  <div class="fundo">
+    <br>
+    <br>
+    <ion-card class="centro">
+      <ion-label><h1>O que deseja ouvir?</h1></ion-label>
+      
+      <ion-searchbar showCancelButton="focus" placeholder="Música ou Artista" id="musica" name="musica" class="custom" [(ngModel)]="musica"></ion-searchbar>
+      <button (click)="handleSearch()" class="botao btn2">Buscar</button>
+      <br>
+      <br>
+    
+      <div id="resultadosBusca" class="ctn">
+        <div *ngFor="let musica of musicas">
+          <img [src]="musica.data.albumOfTrack.coverArt.sources[0].url" />
+          <h2>{{ musica.data.name }}</h2>
+          <a [href]="musica.data.uri"><button class="botao">OUVIR</button></a>
+          <ion-button (click)="adicionarMusicas(musica)" color="#1ED760" class="botao" id="botao">FAVORITAR</ion-button>
+          <br>
+          <br>
+        </div>
+      </div>
+      <br>
+    </ion-card>
+   
+    <br>
+  </div>
+</ion-content>

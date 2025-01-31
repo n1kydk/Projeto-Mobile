@@ -1,0 +1,45 @@
+<ion-content class="fundo">
+  <div class="page-container">
+    <ion-header class="corp">
+      <div>
+        <ion-grid>
+          <br>
+          <ion-row>
+            <ion-col>
+              <img src="../../assets/icon/flaplay.png" class="logo">
+            </ion-col>
+            <ion-col class="p">
+              <table class="pres">
+                <tr>
+                  <td class="a">
+                    Veja seus Favoritados
+                  </td>
+                </tr>
+              </table>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </div>
+    </ion-header>
+  </div>
+  <br>
+  <br>
+  <button (click)="atualizar()" class="btn3">Mostrar Favoritos</button>
+  <br>
+  <ion-card *ngFor="let musica of musicasAdicionadas" class="ctn">
+    <br>
+    <img [src]="musica.data.albumOfTrack.coverArt.sources[0].url" />
+    <ion-card-header>
+      <ion-card-title class="branco"><h2>{{ musica.data.name }}</h2></ion-card-title>
+      <ion-card-subtitle class="branco"><h2>{{ musica.data.artists.name }}</h2></ion-card-subtitle>
+    </ion-card-header>
+    <ion-card-content>
+      {{ musica.data.albumOfTrack.name }}
+      <br>
+      <br>
+      <a [href]="musica.data.uri"><button class="bn">OUVIR</button></a>
+      <br>
+      <button (click)="eliminar(musica)" class="btn2">ELIMINAR</button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
